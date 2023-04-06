@@ -19,7 +19,7 @@ fs.readFile("./test.txt", "utf8", (err, dataSrc) => {
         })
         .join("\r\n")
 
-    fs.writeFile("./testOk.txt", oldData, err => {
+    fs.writeFile(__dirname +  "/file/testOk.txt", oldData, err => {
         err ? console.log("文件写入失败！" + err.message) : console.log("文件写入成功！")
     })
 })
