@@ -11,6 +11,6 @@ fs.readFile(path.join(__dirname, "index.html"), "utf8", (err, dataSrc) => {
 })
 
 const resolveCSS = e => {
-    const x = regStyle.exec(e)
-    console.log(x[0].replace("<style>", "").replace("</style>", ""))
+    const newCSS= regStyle.exec(e)[0].replace("<style>", "").replace("</style>", "")
+    
 }
