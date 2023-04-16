@@ -1,25 +1,25 @@
 const { log } = require("console")
+
 const http = require("http")
 
 const server = http.createServer()
 
+const path = require("path")
+
+const fs = require("fs")
+
 server.on("request", (req, res) => {
     const url = req.url
-    switch (url) {
-        case "/":
-            content = "<h1>我是首页</h1>"
-            break
-        case "/index.html":
-            content = "<h1>我是首页</h1>"
-            break
-        case "/about.html":
-            content = "<h1>我是关于页</h1>"
-            break
-        default:
-            content = "<h1>404</h1>"
+    let fPath = ""
+    if (url === "/") {
+        fPath = path.join(__dirname, "/index.html")
+    } else {
+        fPath = path.join(__dirname, "/File" + url)
     }
+    fs.readFile(fPath, "utf-8", (err, dataSrc) => {
+        err ? res.end("404") : res.end(dataSrc)
+    })
     res.setHeader("Content-Type", "text/html; charset=utf-8")
-    res.end(content)
 })
 
 server.listen(5000, () => {
