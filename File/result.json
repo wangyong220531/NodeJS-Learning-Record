@@ -1,0 +1,80 @@
+[
+    {
+        "key": 0,
+        "title": "A模块",
+        "children": [
+            {
+                "key": 0,
+                "title": "A的子模块A-0",
+                "children": [
+                    {
+                        "key": 0,
+                        "title": "新增"
+                    },
+                    {
+                        "key": 1,
+                        "title": "编辑"
+                    }
+                ]
+            },
+            {
+                "key": 1,
+                "title": "A的子模块A-1",
+                "children": [
+                    {
+                        "key": 8,
+                        "title": "A-1的子模块A-1-0",
+                        "children": [
+                            {
+                                "key": 64,
+                                "title": "新增"
+                            },
+                            {
+                                "key": 65,
+                                "title": "编辑"
+                            },
+                            {
+                                "key": 66,
+                                "title": "删除"
+                            }
+                        ]
+                    },
+                    {
+                        "key": 9,
+                        "title": "A-1的子模块A-1-1",
+                        "children": [
+                            {
+                                "key": 72,
+                                "title": "编辑"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": 1,
+        "title": "B模块",
+        "children": [
+            {
+                "key": 10,
+                "title": "B模块的子模块B-0",
+                "children": [
+                    {
+                        "key": 100,
+                        "title": "新增"
+                    },
+                    {
+                        "key": 101,
+                        "title": "编辑"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": 2,
+        "title": "C模块"
+    }
+]
