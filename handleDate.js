@@ -15,4 +15,4 @@ const padZero = e => {
 
 module.exports = {
     handleDate
-}
+} 
