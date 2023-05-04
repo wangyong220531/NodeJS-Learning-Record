@@ -7,5 +7,5 @@ const apiRouter = require("./apiRouter")
 app.use(apiRouter)
 
 app.listen(5050,() => {
-    console.log();
+    console.log("Express服务正在运行在http://127.0.0.1:5050上");
 })
