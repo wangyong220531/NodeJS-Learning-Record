@@ -6,9 +6,15 @@
 // console.log(module);
 // console.log( exports === module.exports);
 
-const HandleDate = require("./handleDate")
+// const HandleDate = require("./handleDate")
 
-const time = new Date()
+// const time = new Date()
 
-console.log(HandleDate.handleDate(time))
+// console.log(HandleDate.handleDate(time))
 
+// const obj = {
+//     name: "蔡徐腾",
+//     age: 3
+// }
+
+// console.log(JSON.stringify(obj));
