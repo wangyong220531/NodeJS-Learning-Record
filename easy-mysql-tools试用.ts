@@ -1,4 +1,3 @@
-import { error } from "console"
 import { createTools } from "easy-mysql-tools"
 
 type MyDatabase = {
