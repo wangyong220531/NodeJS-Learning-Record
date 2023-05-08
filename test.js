@@ -18,3 +18,17 @@
 // }
 
 // console.log(JSON.stringify(obj));
+
+const express = require("express")
+
+const app = express()
+
+const session = require("express-session")
+
+app.use(
+    session({
+        secret: "caixvtengnb",
+        resave: false,
+        saveUninitialized: true
+    })
+)
