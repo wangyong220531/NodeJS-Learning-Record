@@ -5,12 +5,12 @@ const app = express()
 // 配置解析表单数据的中间件
 app.use(express.urlencoded({ extended: false }))
 
-app.get("/api/jsonp", (req, res) => {
-    const funcName = req.query.callback
-    const data = { name: "蔡徐腾", age: 26 }
-    const scriptStr = `${funcName}(${JSON.stringify(data)})`
-    res.send(scriptStr)
-})
+// app.get("/api/jsonp", (req, res) => {
+//     const funcName = req.query.callback
+//     const data = { name: "蔡徐腾", age: 26 }
+//     const scriptStr = `${funcName}(${JSON.stringify(data)})`
+//     res.send(scriptStr)
+// })
 
 const cors = require("cors")
 

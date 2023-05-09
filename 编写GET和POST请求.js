@@ -21,4 +21,20 @@ router.post("/getList2", (req, res) => {
     })
 })
 
+router.post("/login", (req, res) => {
+    req.username !== "admin" || req.password !== "123456"
+        ? res.send({
+              status: 1,
+              success: false,
+              msg: "登陆失败！"
+          })
+        : (req.session.username === req.body,
+          (req.session.isLogin = true),
+          res.send({
+              status: 0,
+              success: true,
+              msg: "登陆成功！"
+          }))
+})
+
 module.exports = router
