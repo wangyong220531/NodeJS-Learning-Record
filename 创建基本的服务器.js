@@ -16,6 +16,16 @@ const cors = require("cors")
 
 app.use(cors())
 
+const session = require("express-session")
+
+app.use(
+    session({
+        secret: "caixvtengnb",
+        resave: false,
+        saveUninitialized: true
+    })
+)
+
 const apiRouter = require("./编写GET和POST请求")
 
 app.use("/api", apiRouter)
